@@ -1,0 +1,22 @@
+{
+  "name": "@cross-sdk/example-react",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --port 3012",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@cross-sdk/sdk": "1.0.0",
+    "ethers": "6.13.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "uuid": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "vite": "5.4.12"
+  }
+}
