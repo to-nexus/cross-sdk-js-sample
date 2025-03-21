@@ -4,7 +4,11 @@
     "jsx": "preserve",
     "noEmit": true,
     "incremental": true,
-    "types": ["vite/client"]
+    "types": ["vite/client", "react"],
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src"]
 }
