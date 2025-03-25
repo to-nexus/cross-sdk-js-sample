@@ -90,8 +90,8 @@ importers:
   packages/sdk-react:
     dependencies:
       '@to-nexus/sdk':
-        specifier: ^1.0.10
-        version: 1.0.10(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.7.3)
+        specifier: ^1.0.13
+        version: 1.0.13(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.7.3)
       ethers:
         specifier: ^6.13.0
         version: 6.13.5
@@ -839,8 +839,8 @@ packages:
     resolution: {integrity: sha512-xGChUpgdydBIOYFDptSYUI73wWLDp5MyBSRgVL4B8zKoB/yBg0XO3YeUyCuOjbQeD8SgWyiHWq8ae7NN6KiNkQ==, tarball: https://npm.pkg.github.com/download/@to-nexus/core/2.19.0/550e3343f9fe63b5f0ba60439cd9da672347dc9a}
     engines: {node: '>=18'}
 
-  '@to-nexus/sdk@1.0.10':
-    resolution: {integrity: sha512-i3UA7GezsMCyv1e+/Q8rEvgk7wDWjNSbqKJhsI1CqserVPCZiupqF5U+d0VB3oy1cxsqihXLLjnGYQ94A6vNfw==, tarball: https://npm.pkg.github.com/download/@to-nexus/sdk/1.0.10/ec26ac746dfb5d94b2c7eb4752f7dace8e70a665}
+  '@to-nexus/sdk@1.0.13':
+    resolution: {integrity: sha512-OagDjMxdgOCpCjXrpMXRwqYdOvxiSlp3zX6CJ5liWSTeLls/aNFd09yH56aWzguAMvZSjc8Rr61BIVNFesdtZg==, tarball: https://npm.pkg.github.com/download/@to-nexus/sdk/1.0.13/a425566555069e7d18877040bf40db7e77791949}
     peerDependencies:
       ethers: ^6.13.0
       react: ^18.0.0
@@ -4643,7 +4643,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@to-nexus/sdk@1.0.10(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.7.3)':
+  '@to-nexus/sdk@1.0.13(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.7.3)':
     dependencies:
       '@reown/appkit': 1.6.9(@types/react@18.3.20)(react@18.2.0)(typescript@5.7.3)(zod@3.24.2)
       '@reown/appkit-adapter-ethers': 1.6.9(@ethersproject/sha2@5.7.0)(@types/react@18.3.20)(ethers@6.13.5)(react@18.2.0)(typescript@5.7.3)(zod@3.24.2)
