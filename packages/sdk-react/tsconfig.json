@@ -4,7 +4,6 @@
     "jsx": "preserve",
     "noEmit": true,
     "incremental": true,
-    "types": ["vite/client", "react"],
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"]

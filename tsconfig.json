@@ -7,7 +7,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "removeComments": true,
@@ -24,8 +24,7 @@
     "noUncheckedIndexedAccess": true,
     "verbatimModuleSyntax": true,
     "sourceMap": true,
-    "incremental": true,
-    "types": ["vite/client", "node", "react"]
+    "incremental": true
   },
   "exclude": ["node_modules", "dist", "types", "out", ".next", ".turbo", "coverage", "package.json"]
 }
