@@ -35,7 +35,6 @@ export function ActionButtonList() {
   const { switchNetwork } = useAppKitNetwork()
   const [ contractArgs, setContractArgs ] = useState<WriteContractArgs | null>(null)
   const { walletProvider } = useAppKitProvider<UniversalProvider>('eip155');
-  console.log(`walletProvider, namespace: ${JSON.stringify(walletProvider?.namespaces?.['eip155'])}, uri: ${walletProvider?.uri}`)
   
   // erc20 token contract address
   const ERC20_ADDRESS = "0x35Af8eF840Eda3e93FC8F5167dbd8FF0D6F96580"
