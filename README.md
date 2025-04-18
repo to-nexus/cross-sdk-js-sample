@@ -15,7 +15,7 @@
     ```
     .env file should contain
     ```bash
-    VITE_PROJECT_ID=73f7a8de790b563ef9e1dd4d3abaa3d0 // use this for test
+    VITE_PROJECT_ID=0979fd7c92ec3dbd8e78f433c3e5a523 // use this for test
     VITE_ENV_MODE=development   // development or production
     ```
     - Set PATH for github token
