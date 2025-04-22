@@ -10,7 +10,7 @@
 2. Prepare Environment
 :   - Create .env file in project
     ```bash
-    cd examples/sdk-react
+    cd packages/sdk-react
     touch .env
     ```
     .env file should contain
@@ -26,7 +26,9 @@
     ```
     - Run as production mode
     ```bash
-    cd examples/sdk-react
+    cd packages/sdk-react
     npm run build
-    vite preview
+    vite preview --port 4173
     ```
+
+    localhost:4173 is enlisted as whitelist, so please use port 4173 for testing.

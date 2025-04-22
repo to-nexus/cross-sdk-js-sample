@@ -819,50 +819,50 @@ packages:
     engines: {node: '>=10'}
 
   '@to-nexus/appkit-adapter-ethers@1.3.0':
-    resolution: {integrity: sha512-AAOGdrfy5iI+QEezfdEK/8C4wU2YT+hyFoR6Wi8BD5lb5t9rJIWtHph6qXTlYr+a2apPyo3+zKxG/HaIgB0N6A==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit-adapter-ethers/1.3.0/513ac6b26b5dd27a7390d5a5accb7a9c741045e8}
+    resolution: {integrity: sha512-GY7HPOmqTZEYmVV5XOpwzkqU3amP/5iVKeKn7hCfaIAkzZJ+XTg9RSVZBwUre0AfVmdiY6yuMXcET29XrRypPQ==}
     peerDependencies:
       '@ethersproject/sha2': 5.7.0
       ethers: '>=6'
 
   '@to-nexus/appkit-common@1.3.0':
-    resolution: {integrity: sha512-HgZhj5upSlInCEsSyfJK25Xu6hsJLoRAN5uOHapEIXpigz7viGXbQxX90L72YFkc2dp/XFUEL44Cm4hXqJ0msQ==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit-common/1.3.0/e52f9ccd4f0d872164ede22377fdb572b34f388b}
+    resolution: {integrity: sha512-HgZhj5upSlInCEsSyfJK25Xu6hsJLoRAN5uOHapEIXpigz7viGXbQxX90L72YFkc2dp/XFUEL44Cm4hXqJ0msQ==}
 
   '@to-nexus/appkit-core@1.3.0':
-    resolution: {integrity: sha512-0PaU94n32ShBcfCpssuXV/kQiYMkKIXR16yEUlnzsa2RTf+NnHbnwFw9lJTiePcCvgdNZIjgITDjNjJPWdbo8w==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit-core/1.3.0/7aeca628c39b7bf0ce423b35a5f2453de58f20f8}
+    resolution: {integrity: sha512-0PaU94n32ShBcfCpssuXV/kQiYMkKIXR16yEUlnzsa2RTf+NnHbnwFw9lJTiePcCvgdNZIjgITDjNjJPWdbo8w==}
 
   '@to-nexus/appkit-scaffold-ui@1.3.0':
-    resolution: {integrity: sha512-nr4WUxmLKRVPLMoXbouprKDsQyJR5zV7rYcTUt0fpFPql/RDzv3cUAp4OXm0Tq9kWUKq2vAbnQPF2fod0S1T/w==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit-scaffold-ui/1.3.0/e4f8123b1243ddf3ea2cfaa3b41e40aa9ca4374d}
+    resolution: {integrity: sha512-dKFXZpmevaa/CzsbojsxlxGre32S5Ghq5PG5RljmYPhaWHQ2Yt4nZGEy3YKKrSC4LmlyLnRWmnTWjmnreLAQRQ==}
 
   '@to-nexus/appkit-ui@1.3.0':
-    resolution: {integrity: sha512-68kpwlPudox/T4TbcD8o6B+8EoK+vc+Z9PSKzKRq+y8NkISvGb5IrvQDWy7WDVlpCD8l+in+vr+cdu5OKK7Tew==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit-ui/1.3.0/ea62bd565e665ebce86d52e7f1cbaeb51c1b07d1}
+    resolution: {integrity: sha512-KRTYo8V9l5vu5ufQxwW3fDNcixQumJslMyqGg25jrf2sltcJ0/iUJK1PQ7Dop5R1IFtFFOZaciyOKHA65twAjA==}
 
   '@to-nexus/appkit-utils@1.3.0':
-    resolution: {integrity: sha512-oqfiuLFKfpYAIX9srsPN/CONjRUgHljVsGe8W68t96zA079HkGIV7BOfcoF4yq4q3IyaegZek+aKA6zV7lEr1A==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit-utils/1.3.0/a8cf388749215fdb1de0f029d6dd0c490154993b}
+    resolution: {integrity: sha512-oqfiuLFKfpYAIX9srsPN/CONjRUgHljVsGe8W68t96zA079HkGIV7BOfcoF4yq4q3IyaegZek+aKA6zV7lEr1A==}
     peerDependencies:
       valtio: 1.13.2
 
   '@to-nexus/appkit-wallet@1.3.0':
-    resolution: {integrity: sha512-IKytJB08f831yTzYkwumtqjFVTbHi6DT/mLr3cMZnA9/EsMjV6Phh0/pRB84QiHh/fiW7MmDZyty70WaApn1nA==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit-wallet/1.3.0/ec299a73369a8e832d8f542026908316b2da4711}
+    resolution: {integrity: sha512-IKytJB08f831yTzYkwumtqjFVTbHi6DT/mLr3cMZnA9/EsMjV6Phh0/pRB84QiHh/fiW7MmDZyty70WaApn1nA==}
 
   '@to-nexus/appkit@1.3.0':
-    resolution: {integrity: sha512-EODNwwwY5/GrMEONmr6Oo36TtScOwYc7v6wVsEBtVhaLV3XFENZ+kTnSq82O9WNS5bETuoVLtddllZdSewVOLw==, tarball: https://npm.pkg.github.com/download/@to-nexus/appkit/1.3.0/1d4edf28df79843cc63df2d7569f9dc244bfb070}
+    resolution: {integrity: sha512-7n/z4P2bzANcExjOvj140X14MfrRxANMClSdQ+XCVbqFYAeldDd1Gwh3sk2Et4uesRNgQ/CSM8CqyFPJWGIhBg==}
 
   '@to-nexus/core@2.19.7':
-    resolution: {integrity: sha512-ANQIj3CUN/V+ddjUae+qo/vAhqigQV4uuWLXlsQ5nAIDW/fFyFGUnoJWCFHiM2HkeRwMZP83CNCpgu51NxAOOQ==, tarball: https://npm.pkg.github.com/download/@to-nexus/core/2.19.7/7f6a0ad483bc7e1267a709490443f03b5874bcca}
+    resolution: {integrity: sha512-ANQIj3CUN/V+ddjUae+qo/vAhqigQV4uuWLXlsQ5nAIDW/fFyFGUnoJWCFHiM2HkeRwMZP83CNCpgu51NxAOOQ==}
     engines: {node: '>=18'}
 
   '@to-nexus/sdk@1.3.0':
-    resolution: {integrity: sha512-VkdcUBJI0YCZC2QwJEDZhYpg911Y7HSa0Ch8wFjl+VlLHdbJ/MxB8rTApg7u++4P8Ygu/dk7dJ+UpWDhHN008w==, tarball: https://npm.pkg.github.com/download/@to-nexus/sdk/1.3.0/39e76a5c53f8a72cd4a13d836962eb57b7d23ab5}
+    resolution: {integrity: sha512-8ZcGbVAbC7wgLxrhwywkAfIR+7g7C1woM9iv95srqyHDXxnYGuFYBp23pacoH9HDfo+LCKPik6u1ThVSLff1AQ==}
     peerDependencies:
       ethers: ^6.13.0
       react: ^18.0.0
       react-dom: ^18.0.0
 
   '@to-nexus/sign-client@2.19.7':
-    resolution: {integrity: sha512-cvm91w44At9u3Ypiiy7eaSkMLnvIYOiZ6dBz0AP6OUAWTFTgw8dMIN8gCU+72hPvD/myxLc3jOMXDWNU/CJJUA==, tarball: https://npm.pkg.github.com/download/@to-nexus/sign-client/2.19.7/51e6804854d426c3999b4efdf8686135b29b7562}
+    resolution: {integrity: sha512-cvm91w44At9u3Ypiiy7eaSkMLnvIYOiZ6dBz0AP6OUAWTFTgw8dMIN8gCU+72hPvD/myxLc3jOMXDWNU/CJJUA==}
 
   '@to-nexus/universal-provider@2.19.7':
-    resolution: {integrity: sha512-bEQGTSW1P4Zk4PTemI5KMZDFyHy5QtyCfxAPsZ07pUn1CtdFBasJ7Em14JDPC+5L6zi8+Nd5QGV/2SSL07rHIA==, tarball: https://npm.pkg.github.com/download/@to-nexus/universal-provider/2.19.7/37b3553a233f5114fed4e463aaaa563e12b9f973}
+    resolution: {integrity: sha512-bEQGTSW1P4Zk4PTemI5KMZDFyHy5QtyCfxAPsZ07pUn1CtdFBasJ7Em14JDPC+5L6zi8+Nd5QGV/2SSL07rHIA==}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -4357,8 +4357,8 @@ snapshots:
 
   '@scure/bip32@1.6.2':
     dependencies:
-      '@noble/curves': 1.8.1
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.8.2
+      '@noble/hashes': 1.7.2
       '@scure/base': 1.2.4
 
   '@scure/bip39@1.2.1':
@@ -4368,7 +4368,7 @@ snapshots:
 
   '@scure/bip39@1.5.4':
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.7.2
       '@scure/base': 1.2.4
 
   '@sindresorhus/is@4.6.0': {}
