@@ -16,28 +16,17 @@
     .env file should contain
     ```bash
     VITE_PROJECT_ID=0979fd7c92ec3dbd8e78f433c3e5a523 // use this for test
-    VITE_ENV_MODE=development   // development or production
+    VITE_ENV_MODE=production   // development or production
     ```
-    - Set PATH for github token
-    ```bash
-    vi ~/.zshrc
-
-    # add this line on the bottom of file
-    export GITHUB_TOKEN=ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-    # save and exit and source the file
-    .source ~/.zshrc
-
-    # you need to restart the terminal
-    echo $GITHUB_TOKEN  // to see the token is set properly
-    ```
+    - SDK package is now publicly visible, so github token is not required.
 3. Install dependencies
 :   - Install dependencies on root
     ```bash
     pnpm install
     ```
-    - Run as development mode
+    - Run as production mode
     ```bash
     cd examples/sdk-react
-    npm run dev
+    npm run build
+    vite preview
     ```
