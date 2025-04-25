@@ -90,8 +90,8 @@ importers:
   packages/sdk-react:
     dependencies:
       '@to-nexus/sdk':
-        specifier: 1.3.0
-        version: 1.3.0(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+        specifier: 1.3.3
+        version: 1.3.3(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       ethers:
         specifier: ^6.13.0
         version: 6.13.5
@@ -795,8 +795,8 @@ packages:
   '@scure/base@1.1.9':
     resolution: {integrity: sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg==}
 
-  '@scure/base@1.2.4':
-    resolution: {integrity: sha512-5Yy9czTO47mqz+/J8GM6GIId4umdCk1wc1q8rKERQulIoc8VP9pzDcghv10Tl2E7R96ZUx/PhND3ESYUQX8NuQ==}
+  '@scure/base@1.2.5':
+    resolution: {integrity: sha512-9rE6EOVeIQzt5TSu4v+K523F8u6DhBsoZWPGKlnCshhlDhy0kJzUX4V+tr2dWmzF1GdekvThABoEQBGBQI7xZw==}
 
   '@scure/bip32@1.3.2':
     resolution: {integrity: sha512-N1ZhksgwD3OBlwTv3R6KFEcPojl/W4ElJOeCZdi+vuI5QmTFwLq3OFf2zd2ROpKvxFdgZ6hUpb0dx9bVNEwYCA==}
@@ -818,51 +818,51 @@ packages:
     resolution: {integrity: sha512-4BAffykYOgO+5nzBWYwE3W90sBgLJoUPRWWcL8wlyiM8IB8ipJz3UMJ9KXQd1RKQXpKp8Tutn80HZtWsu2u76w==}
     engines: {node: '>=10'}
 
-  '@to-nexus/appkit-adapter-ethers@1.3.0':
-    resolution: {integrity: sha512-GY7HPOmqTZEYmVV5XOpwzkqU3amP/5iVKeKn7hCfaIAkzZJ+XTg9RSVZBwUre0AfVmdiY6yuMXcET29XrRypPQ==}
+  '@to-nexus/appkit-adapter-ethers@1.3.3':
+    resolution: {integrity: sha512-9P2Lmissr3kJ2+qHJNAcrNQVfkju75ke0knEsq/qxS3b6MLh3EFK6o6lVl+tH+FdVgpY4uVxJ4haRLkqc2DR5w==}
     peerDependencies:
       '@ethersproject/sha2': 5.7.0
       ethers: '>=6'
 
-  '@to-nexus/appkit-common@1.3.0':
-    resolution: {integrity: sha512-HgZhj5upSlInCEsSyfJK25Xu6hsJLoRAN5uOHapEIXpigz7viGXbQxX90L72YFkc2dp/XFUEL44Cm4hXqJ0msQ==}
+  '@to-nexus/appkit-common@1.3.3':
+    resolution: {integrity: sha512-T2aW38MpYzTJmclmsCnrqiSzlcGAqdXmjSdoSIK9keb9GKjugjwwtYsmTxInPCAJXBwlWzKz5LhvBx7H/CtF/Q==}
 
-  '@to-nexus/appkit-core@1.3.0':
-    resolution: {integrity: sha512-0PaU94n32ShBcfCpssuXV/kQiYMkKIXR16yEUlnzsa2RTf+NnHbnwFw9lJTiePcCvgdNZIjgITDjNjJPWdbo8w==}
+  '@to-nexus/appkit-core@1.3.3':
+    resolution: {integrity: sha512-AXZpXekda7GSxYHHpOUvr8sYdcQARyZlTH2cs1e+0TFK7fWOd6WEC+SBy7/9lEBjXGVUR6z/foQQrfqNYt7v7w==}
 
-  '@to-nexus/appkit-scaffold-ui@1.3.0':
-    resolution: {integrity: sha512-dKFXZpmevaa/CzsbojsxlxGre32S5Ghq5PG5RljmYPhaWHQ2Yt4nZGEy3YKKrSC4LmlyLnRWmnTWjmnreLAQRQ==}
+  '@to-nexus/appkit-scaffold-ui@1.3.3':
+    resolution: {integrity: sha512-1cycTMlro3xeKFQ406f3436ly0hnmpNPln2Tnj3afWeCnKv1naKhdgopzuHKe3Dkm+TVClfrSnrvARLyC88txg==}
 
-  '@to-nexus/appkit-ui@1.3.0':
-    resolution: {integrity: sha512-KRTYo8V9l5vu5ufQxwW3fDNcixQumJslMyqGg25jrf2sltcJ0/iUJK1PQ7Dop5R1IFtFFOZaciyOKHA65twAjA==}
+  '@to-nexus/appkit-ui@1.3.3':
+    resolution: {integrity: sha512-fJRJHr5S3mz4W9ql0lBWk5I0KJZb+r66fKP3oCu5NPNfLCc06mnb06anJze9mrVWjrIi8hG55A72YHVdFMtqSQ==}
 
-  '@to-nexus/appkit-utils@1.3.0':
-    resolution: {integrity: sha512-oqfiuLFKfpYAIX9srsPN/CONjRUgHljVsGe8W68t96zA079HkGIV7BOfcoF4yq4q3IyaegZek+aKA6zV7lEr1A==}
+  '@to-nexus/appkit-utils@1.3.3':
+    resolution: {integrity: sha512-FkhFBw/qeSeX5X/ol7MdtdzTqqiT6BdV/kdAbqusebDrEUM+z9bu0ya5IkgsXB8JNQ+dDbpirA0LcxcjGgb2zA==}
     peerDependencies:
       valtio: 1.13.2
 
-  '@to-nexus/appkit-wallet@1.3.0':
-    resolution: {integrity: sha512-IKytJB08f831yTzYkwumtqjFVTbHi6DT/mLr3cMZnA9/EsMjV6Phh0/pRB84QiHh/fiW7MmDZyty70WaApn1nA==}
+  '@to-nexus/appkit-wallet@1.3.3':
+    resolution: {integrity: sha512-ATgLJsPDFcgLJALGn8odjGdlc72t9wYlX3OjQUNY1wiYbtRBZyvG/Gy19e0WGc89TXuyD2VjbeMF8QZG5aWvow==}
 
-  '@to-nexus/appkit@1.3.0':
-    resolution: {integrity: sha512-7n/z4P2bzANcExjOvj140X14MfrRxANMClSdQ+XCVbqFYAeldDd1Gwh3sk2Et4uesRNgQ/CSM8CqyFPJWGIhBg==}
+  '@to-nexus/appkit@1.3.3':
+    resolution: {integrity: sha512-/0SfRT67o6vK6S7zoBdWCi5ys+ebzZP7lalKZNJ4rEln3zbz6oDiKByFK4Aer5tAZbAUgiE9Uo6G7a5yJ1qFmw==}
 
-  '@to-nexus/core@2.19.7':
-    resolution: {integrity: sha512-ANQIj3CUN/V+ddjUae+qo/vAhqigQV4uuWLXlsQ5nAIDW/fFyFGUnoJWCFHiM2HkeRwMZP83CNCpgu51NxAOOQ==}
+  '@to-nexus/core@2.19.8':
+    resolution: {integrity: sha512-I7gMXBI5CyDu9MX3YGtWoeuc7sWcVQGatCar1MJegCrD6ZVM3owEMcHXnWK56t4i++TL917KomwOk+0qTPA/QQ==}
     engines: {node: '>=18'}
 
-  '@to-nexus/sdk@1.3.0':
-    resolution: {integrity: sha512-8ZcGbVAbC7wgLxrhwywkAfIR+7g7C1woM9iv95srqyHDXxnYGuFYBp23pacoH9HDfo+LCKPik6u1ThVSLff1AQ==}
+  '@to-nexus/sdk@1.3.3':
+    resolution: {integrity: sha512-qYXXiVM13WDtg1ZO1UkDuWwsItr+WUH16hEddBFx5PfmPo6QSW9Y7pJphkdfGuAALMM6A1Vocr84b1it7e0FZQ==}
     peerDependencies:
       ethers: ^6.13.0
       react: ^18.0.0
       react-dom: ^18.0.0
 
-  '@to-nexus/sign-client@2.19.7':
-    resolution: {integrity: sha512-cvm91w44At9u3Ypiiy7eaSkMLnvIYOiZ6dBz0AP6OUAWTFTgw8dMIN8gCU+72hPvD/myxLc3jOMXDWNU/CJJUA==}
+  '@to-nexus/sign-client@2.19.8':
+    resolution: {integrity: sha512-JDSPd3oGNBtaNEYQyG6Y8XIpIinutUQXRaL/zMEQ76k+WqoGSGH/1jM2XJLHul+3EPmt5OXwZpHxYcR0AE57RA==}
 
-  '@to-nexus/universal-provider@2.19.7':
-    resolution: {integrity: sha512-bEQGTSW1P4Zk4PTemI5KMZDFyHy5QtyCfxAPsZ07pUn1CtdFBasJ7Em14JDPC+5L6zi8+Nd5QGV/2SSL07rHIA==}
+  '@to-nexus/universal-provider@2.19.8':
+    resolution: {integrity: sha512-EOkWviYCGZfpjqifYkdRJESz0pYCpz+8NPTLr/LExV9FvxgT9J7s+/yQICxfWp+g2eBYT/hODaTgsqr9ogEKGw==}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -1607,8 +1607,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  electron-to-chromium@1.5.140:
-    resolution: {integrity: sha512-o82Rj+ONp4Ip7Cl1r7lrqx/pXhbp/lh9DpKcMNscFJdh8ebyRofnc7Sh01B4jx403RI0oqTBvlZ7OBIZLMr2+Q==}
+  electron-to-chromium@1.5.142:
+    resolution: {integrity: sha512-Ah2HgkTu/9RhTDNThBtzu2Wirdy4DC9b0sMT1pUhbkZQ5U/iwmE+PHZX1MpjD5IkJCc2wSghgGG/B04szAx07w==}
 
   elliptic@6.6.1:
     resolution: {integrity: sha512-RaddvvMatK2LJHqFJ+YA4WysVN5Ita9E35botqIYspQ4TkRAlCicdzKOjlyv/1Za5RyTNn7di//eEV0uTAfe3g==}
@@ -1629,8 +1629,8 @@ packages:
     resolution: {integrity: sha512-rRqJg/6gd538VHvR3PSrdRBb/1Vy2YfzHqzvbhGIQpDRKIa4FgV/54b5Q1xYSxOOwKvjXweS26E0Q+nAMwp2pQ==}
     engines: {node: '>=8.6'}
 
-  entities@4.5.0:
-    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
+  entities@6.0.0:
+    resolution: {integrity: sha512-aKstq2TDOndCn4diEyp9Uq/Flu2i1GlLkc6XIDQSDMuaFE3OPW5OphLCyQ5SpSJZTb4reN+kTcYru5yIfXoRPw==}
     engines: {node: '>=0.12'}
 
   es-define-property@1.0.1:
@@ -1641,8 +1641,8 @@ packages:
     resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
     engines: {node: '>= 0.4'}
 
-  es-module-lexer@1.6.0:
-    resolution: {integrity: sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==}
+  es-module-lexer@1.7.0:
+    resolution: {integrity: sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==}
 
   es-object-atoms@1.1.1:
     resolution: {integrity: sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA==}
@@ -2598,8 +2598,8 @@ packages:
     resolution: {integrity: sha512-1Y1A//QUXEZK7YKz+rD9WydcE1+EuPr6ZBgKecAB8tmoW6UFv0NREVJe1p+jRxtThkcbbKkfwIbWJe/IeE6m2Q==}
     engines: {node: '>=0.10.0'}
 
-  parse5@7.2.1:
-    resolution: {integrity: sha512-BuBYQYlv1ckiPdQi/ohiivi9Sagc9JG+Ozs0r7b/0iK3sKmrb0b9FdWdBbOdx6hBCM/F9Ir82ofnBhtZOjCRPQ==}
+  parse5@7.3.0:
+    resolution: {integrity: sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw==}
 
   path-browserify@1.0.1:
     resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
@@ -3339,8 +3339,8 @@ packages:
       typescript:
         optional: true
 
-  viem@2.27.3:
-    resolution: {integrity: sha512-n15nZz143MoXCE3RbmdEBtomQRjuT5sS5Mgo0B2haGd0tZ4nXES+x829a1GrLr8+ApP29I1ASmVQVglGN6Hpzg==}
+  viem@2.28.0:
+    resolution: {integrity: sha512-Z4W5O1pe+6pirYTFm451FcZmfGAUxUWt2L/eWC+YfTF28j/8rd7q6MBAi05lMN4KhLJjhN0s5YGIPB+kf1L20g==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -4347,7 +4347,7 @@ snapshots:
 
   '@scure/base@1.1.9': {}
 
-  '@scure/base@1.2.4': {}
+  '@scure/base@1.2.5': {}
 
   '@scure/bip32@1.3.2':
     dependencies:
@@ -4359,7 +4359,7 @@ snapshots:
     dependencies:
       '@noble/curves': 1.8.2
       '@noble/hashes': 1.7.2
-      '@scure/base': 1.2.4
+      '@scure/base': 1.2.5
 
   '@scure/bip39@1.2.1':
     dependencies:
@@ -4369,7 +4369,7 @@ snapshots:
   '@scure/bip39@1.5.4':
     dependencies:
       '@noble/hashes': 1.7.2
-      '@scure/base': 1.2.4
+      '@scure/base': 1.2.5
 
   '@sindresorhus/is@4.6.0': {}
 
@@ -4377,18 +4377,18 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@to-nexus/appkit-adapter-ethers@1.3.0(@ethersproject/sha2@5.7.0)(@types/react@18.3.20)(ethers@6.13.5)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)':
+  '@to-nexus/appkit-adapter-ethers@1.3.3(@ethersproject/sha2@5.7.0)(@types/react@18.3.20)(ethers@6.13.5)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)':
     dependencies:
       '@ethersproject/sha2': 5.7.0
       '@reown/appkit-polyfills': 1.6.9
-      '@to-nexus/appkit': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-common': 1.3.0(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-core': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-scaffold-ui': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
-      '@to-nexus/appkit-ui': 1.3.0
-      '@to-nexus/appkit-utils': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
-      '@to-nexus/appkit-wallet': 1.3.0(typescript@5.7.3)
-      '@to-nexus/universal-provider': 2.19.7(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-common': 1.3.3(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-core': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-scaffold-ui': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
+      '@to-nexus/appkit-ui': 1.3.3
+      '@to-nexus/appkit-utils': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
+      '@to-nexus/appkit-wallet': 1.3.3(typescript@5.7.3)
+      '@to-nexus/universal-provider': 2.19.8(typescript@5.7.3)(zod@3.24.3)
       '@walletconnect/utils': 2.18.0
       ethers: 6.13.5
       valtio: 1.13.2(@types/react@18.3.20)(react@18.3.1)
@@ -4421,35 +4421,35 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@to-nexus/appkit-common@1.3.0(typescript@5.7.3)(zod@3.22.4)':
+  '@to-nexus/appkit-common@1.3.3(typescript@5.7.3)(zod@3.22.4)':
     dependencies:
       big.js: 6.2.2
       dayjs: 1.11.10
-      viem: 2.27.3(typescript@5.7.3)(zod@3.22.4)
+      viem: 2.28.0(typescript@5.7.3)(zod@3.22.4)
     transitivePeerDependencies:
       - bufferutil
       - typescript
       - utf-8-validate
       - zod
 
-  '@to-nexus/appkit-common@1.3.0(typescript@5.7.3)(zod@3.24.3)':
+  '@to-nexus/appkit-common@1.3.3(typescript@5.7.3)(zod@3.24.3)':
     dependencies:
       big.js: 6.2.2
       dayjs: 1.11.10
-      viem: 2.27.3(typescript@5.7.3)(zod@3.24.3)
+      viem: 2.28.0(typescript@5.7.3)(zod@3.24.3)
     transitivePeerDependencies:
       - bufferutil
       - typescript
       - utf-8-validate
       - zod
 
-  '@to-nexus/appkit-core@1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)':
+  '@to-nexus/appkit-core@1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)':
     dependencies:
-      '@to-nexus/appkit-common': 1.3.0(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-wallet': 1.3.0(typescript@5.7.3)
-      '@to-nexus/universal-provider': 2.19.7(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-common': 1.3.3(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-wallet': 1.3.3(typescript@5.7.3)
+      '@to-nexus/universal-provider': 2.19.8(typescript@5.7.3)(zod@3.24.3)
       valtio: 1.13.2(@types/react@18.3.20)(react@18.3.1)
-      viem: 2.27.3(typescript@5.7.3)(zod@3.24.3)
+      viem: 2.28.0(typescript@5.7.3)(zod@3.24.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -4477,13 +4477,13 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@to-nexus/appkit-scaffold-ui@1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)':
+  '@to-nexus/appkit-scaffold-ui@1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)':
     dependencies:
-      '@to-nexus/appkit-common': 1.3.0(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-core': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-ui': 1.3.0
-      '@to-nexus/appkit-utils': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
-      '@to-nexus/appkit-wallet': 1.3.0(typescript@5.7.3)
+      '@to-nexus/appkit-common': 1.3.3(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-core': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-ui': 1.3.3
+      '@to-nexus/appkit-utils': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
+      '@to-nexus/appkit-wallet': 1.3.3(typescript@5.7.3)
       lit: 3.1.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -4513,21 +4513,21 @@ snapshots:
       - valtio
       - zod
 
-  '@to-nexus/appkit-ui@1.3.0':
+  '@to-nexus/appkit-ui@1.3.3':
     dependencies:
       lit: 3.1.0
       qrcode: 1.5.3
 
-  '@to-nexus/appkit-utils@1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)':
+  '@to-nexus/appkit-utils@1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)':
     dependencies:
       '@reown/appkit-polyfills': 1.6.9
-      '@to-nexus/appkit-common': 1.3.0(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-core': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-wallet': 1.3.0(typescript@5.7.3)
-      '@to-nexus/universal-provider': 2.19.7(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-common': 1.3.3(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-core': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-wallet': 1.3.3(typescript@5.7.3)
+      '@to-nexus/universal-provider': 2.19.8(typescript@5.7.3)(zod@3.24.3)
       '@walletconnect/logger': 2.1.2
       valtio: 1.13.2(@types/react@18.3.20)(react@18.3.1)
-      viem: 2.27.3(typescript@5.7.3)(zod@3.24.3)
+      viem: 2.28.0(typescript@5.7.3)(zod@3.24.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -4555,10 +4555,10 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@to-nexus/appkit-wallet@1.3.0(typescript@5.7.3)':
+  '@to-nexus/appkit-wallet@1.3.3(typescript@5.7.3)':
     dependencies:
       '@reown/appkit-polyfills': 1.6.9
-      '@to-nexus/appkit-common': 1.3.0(typescript@5.7.3)(zod@3.22.4)
+      '@to-nexus/appkit-common': 1.3.3(typescript@5.7.3)(zod@3.22.4)
       '@walletconnect/logger': 2.1.2
       zod: 3.22.4
     transitivePeerDependencies:
@@ -4566,21 +4566,21 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@to-nexus/appkit@1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)':
+  '@to-nexus/appkit@1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)':
     dependencies:
       '@reown/appkit-polyfills': 1.6.9
-      '@to-nexus/appkit-common': 1.3.0(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-core': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-scaffold-ui': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
-      '@to-nexus/appkit-ui': 1.3.0
-      '@to-nexus/appkit-utils': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
-      '@to-nexus/appkit-wallet': 1.3.0(typescript@5.7.3)
-      '@to-nexus/universal-provider': 2.19.7(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-common': 1.3.3(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-core': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-scaffold-ui': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
+      '@to-nexus/appkit-ui': 1.3.3
+      '@to-nexus/appkit-utils': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
+      '@to-nexus/appkit-wallet': 1.3.3(typescript@5.7.3)
+      '@to-nexus/universal-provider': 2.19.8(typescript@5.7.3)(zod@3.24.3)
       '@walletconnect/types': 2.18.0
       '@walletconnect/utils': 2.18.0
       bs58: 6.0.0
       valtio: 1.13.2(@types/react@18.3.20)(react@18.3.1)
-      viem: 2.27.3(typescript@5.7.3)(zod@3.24.3)
+      viem: 2.28.0(typescript@5.7.3)(zod@3.24.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -4608,7 +4608,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@to-nexus/core@2.19.7(typescript@5.7.3)(zod@3.24.3)':
+  '@to-nexus/core@2.19.8(typescript@5.7.3)(zod@3.24.3)':
     dependencies:
       '@walletconnect/heartbeat': 1.2.2
       '@walletconnect/jsonrpc-provider': 1.0.14
@@ -4651,16 +4651,16 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@to-nexus/sdk@1.3.0(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@to-nexus/sdk@1.3.3(@ethersproject/sha2@5.7.0)(@types/node@22.13.4)(@types/react@18.3.20)(ethers@6.13.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@to-nexus/appkit': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-adapter-ethers': 1.3.0(@ethersproject/sha2@5.7.0)(@types/react@18.3.20)(ethers@6.13.5)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-common': 1.3.0(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-core': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
-      '@to-nexus/appkit-scaffold-ui': 1.3.0(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
-      '@to-nexus/appkit-ui': 1.3.0
-      '@to-nexus/appkit-wallet': 1.3.0(typescript@5.7.3)
-      '@to-nexus/universal-provider': 2.19.7(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-adapter-ethers': 1.3.3(@ethersproject/sha2@5.7.0)(@types/react@18.3.20)(ethers@6.13.5)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-common': 1.3.3(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-core': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/appkit-scaffold-ui': 1.3.3(@types/react@18.3.20)(react@18.3.1)(typescript@5.7.3)(valtio@1.13.2(@types/react@18.3.20)(react@18.3.1))(zod@3.24.3)
+      '@to-nexus/appkit-ui': 1.3.3
+      '@to-nexus/appkit-wallet': 1.3.3(typescript@5.7.3)
+      '@to-nexus/universal-provider': 2.19.8(typescript@5.7.3)(zod@3.24.3)
       '@walletconnect/logger': 2.1.2
       big.js: 6.2.2
       bs58: 5.0.0
@@ -4708,9 +4708,9 @@ snapshots:
       - uploadthing
       - utf-8-validate
 
-  '@to-nexus/sign-client@2.19.7(typescript@5.7.3)(zod@3.24.3)':
+  '@to-nexus/sign-client@2.19.8(typescript@5.7.3)(zod@3.24.3)':
     dependencies:
-      '@to-nexus/core': 2.19.7(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/core': 2.19.8(typescript@5.7.3)(zod@3.24.3)
       '@walletconnect/events': 1.0.1
       '@walletconnect/heartbeat': 1.2.2
       '@walletconnect/jsonrpc-utils': 1.0.8
@@ -4743,9 +4743,9 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@to-nexus/universal-provider@2.19.7(typescript@5.7.3)(zod@3.24.3)':
+  '@to-nexus/universal-provider@2.19.8(typescript@5.7.3)(zod@3.24.3)':
     dependencies:
-      '@to-nexus/sign-client': 2.19.7(typescript@5.7.3)(zod@3.24.3)
+      '@to-nexus/sign-client': 2.19.8(typescript@5.7.3)(zod@3.24.3)
       '@walletconnect/events': 1.0.1
       '@walletconnect/jsonrpc-http-connection': 1.0.8
       '@walletconnect/jsonrpc-provider': 1.0.14
@@ -5472,7 +5472,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001715
-      electron-to-chromium: 1.5.140
+      electron-to-chromium: 1.5.142
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
@@ -5834,7 +5834,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  electron-to-chromium@1.5.140: {}
+  electron-to-chromium@1.5.142: {}
 
   elliptic@6.6.1:
     dependencies:
@@ -5861,13 +5861,13 @@ snapshots:
       ansi-colors: 4.1.3
       strip-ansi: 6.0.1
 
-  entities@4.5.0: {}
+  entities@6.0.0: {}
 
   es-define-property@1.0.1: {}
 
   es-errors@1.3.0: {}
 
-  es-module-lexer@1.6.0: {}
+  es-module-lexer@1.7.0: {}
 
   es-object-atoms@1.1.1:
     dependencies:
@@ -6498,7 +6498,7 @@ snapshots:
       https-proxy-agent: 7.0.6
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.20
-      parse5: 7.2.1
+      parse5: 7.3.0
       rrweb-cssom: 0.7.1
       saxes: 6.0.0
       symbol-tree: 3.2.4
@@ -6928,9 +6928,9 @@ snapshots:
 
   parse-passwd@1.0.0: {}
 
-  parse5@7.2.1:
+  parse5@7.3.0:
     dependencies:
-      entities: 4.5.0
+      entities: 6.0.0
 
   path-browserify@1.0.1: {}
 
@@ -7611,7 +7611,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  viem@2.27.3(typescript@5.7.3)(zod@3.22.4):
+  viem@2.28.0(typescript@5.7.3)(zod@3.22.4):
     dependencies:
       '@noble/curves': 1.8.2
       '@noble/hashes': 1.7.2
@@ -7628,7 +7628,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  viem@2.27.3(typescript@5.7.3)(zod@3.24.3):
+  viem@2.28.0(typescript@5.7.3)(zod@3.24.3):
     dependencies:
       '@noble/curves': 1.8.2
       '@noble/hashes': 1.7.2
@@ -7649,7 +7649,7 @@ snapshots:
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
-      es-module-lexer: 1.6.0
+      es-module-lexer: 1.7.0
       pathe: 1.1.2
       vite: 5.4.12(@types/node@22.13.4)
     transitivePeerDependencies:
