@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { use, useEffect, useState } from 'react'
 
 import {
   AccountController,
@@ -6,10 +6,13 @@ import {
   ConstantsUtil,
   SendController,
   UniversalProvider,
+  bscMainnet,
+  bscTestnet,
   crossMainnet,
   crossTestnet,
   getUniversalProvider,
   initCrossSdk,
+  initCrossSdkWithParams,
   useAppKit,
   useAppKitAccount,
   useAppKitNetwork,
@@ -17,7 +20,7 @@ import {
   useAppKitWallet,
   useDisconnect
 } from '@to-nexus/sdk/react'
-import type { WriteContractArgs } from '@to-nexus/sdk/react'
+import type { AssetFilterType, WriteContractArgs } from '@to-nexus/sdk/react'
 import { Signature, ethers } from 'ethers'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -32,7 +35,24 @@ const redirectUrl = window.location.href
 
 console.log(`redirectUrl: ${redirectUrl}`)
 // Initialize SDK here
-initCrossSdk(projectId, redirectUrl)
+// initCrossSdkWithParams({
+//   projectId,
+//   redirectUrl,
+//   metadata: {
+//     name: 'Cross SDK',
+//     description: 'Cross SDK for React',
+//     url: 'https://to.nexus',
+//     icons: ['https://contents.crosstoken.io/wallet/token/images/CROSSx.svg']
+//   },
+//   themeMode: 'light'
+// })
+const metadata = {
+  name: 'Cross SDK',
+  description: 'Cross SDK for React',
+  url: 'https://to.nexus',
+  icons: ['https://contents.crosstoken.io/wallet/token/images/CROSSx.svg']
+}
+initCrossSdk(projectId, redirectUrl, metadata, 'dark', crossMainnet)
 
 export function ActionButtonList() {
   const appKit = useAppKit()
@@ -44,13 +64,13 @@ export function ActionButtonList() {
   const { walletProvider } = useAppKitProvider<UniversalProvider>('eip155')
   const { connect } = useAppKitWallet()
   // erc20 token contract address
-  const ERC20_ADDRESS = '0x88f8146EB4120dA51Fc978a22933CbeB71D8Bde6'
+  const ERC20_ADDRESS = '0xe934057Ac314cD9bA9BC17AE2378959fd39Aa2E3'
   // define decimals of erc20 token (ERC20 standard is 18)
   const ERC20_DECIMALS = 18
   // erc20 token contract address in caip format - eip155:{chainId}:{address}
   const ERC20_CAIP_ADDRESS = `${network.caipNetworkId}:${ERC20_ADDRESS}`
   // erc721 token contract address
-  const ERC721_ADDRESS = '0xEeE291deAF8505681AA7A3e930A6f12b7f21fe65'
+  const ERC721_ADDRESS = '0xaD31a95fE6bAc89Bc4Cf84dEfb23ebBCA080c013'
   // address to send erc20 token or cross
   const RECEIVER_ADDRESS = '0xB09f7E5309982523310Af3eA1422Fcc2e3a9c379'
   // address of wallet owner
@@ -64,6 +84,10 @@ export function ActionButtonList() {
   )
   // amount of cross to send
   const SEND_CROSS_AMOUNT = 1
+
+  useEffect(() => {
+    console.log('contractArgs', JSON.stringify(contractArgs?.args, ))
+  }, [contractArgs?.args])
 
   // used for connecting wallet with wallet list
   function handleConnect() {
@@ -86,6 +110,14 @@ export function ActionButtonList() {
   function handleSwitchNetwork() {
     const targetNetwork =
       import.meta.env['VITE_NODE_ENV'] === 'production' ? crossMainnet : crossTestnet
+    switchNetwork(targetNetwork)
+    alert(`Current network: ${targetNetwork.caipNetworkId}`)
+  }
+
+  function handleSwitchNetworkBsc() {
+    const targetNetwork =
+      import.meta.env['VITE_NODE_ENV'] === 'production' ? bscMainnet : bscTestnet
+
     switchNetwork(targetNetwork)
     alert(`Current network: ${targetNetwork.caipNetworkId}`)
   }
@@ -402,8 +434,145 @@ export function ActionButtonList() {
     alert(`erc721 balance: ${amount}`)
   }
 
+  async function getBalanceFromWalletWithChainFilter() {
+    if (!account?.isConnected) {
+      alert('Please connect wallet first.')
+      return
+    }
+
+    const chainFilter = [`0x${network?.chainId?.toString(16)}`] as `0x${string}`[]
+    console.log(`getBalanceFromWallet - chainFilter: ${chainFilter}`)
+
+    const tokens = await ConnectionController.walletGetAssets({
+      account: FROM_ADDRESS,
+      chainFilter
+    })
+    alert(
+      `balance: ${JSON.stringify(tokens, (key, value) => (typeof value === 'bigint' ? value.toString() : value), 2)}`
+    )
+  }
+
+  async function getBalanceFromWalletWithAssetFilter() {
+    if (!account?.isConnected) {
+      alert('Please connect wallet first.')
+      return
+    }
+
+    // 현재 체인 ID를 16진수 형태로 변환
+    const chainIdHex = `0x${network?.chainId?.toString(16)}` as `0x${string}`
+    console.log(`getSpecificTokensBalance - chainId: ${chainIdHex}`)
+
+    // assetFilter 구성
+    const assetFilter = {
+      [chainIdHex as `0x${string}`]: [
+        // 네이티브 토큰 (ETH, BNB 등)
+        { address: 'native', type: 'native' },
+        // MYTC 토큰 주소
+        { address: '0x89b743f55fa4f300be1cd86cfb714979c16e4efe', type: 'erc20' },
+        // tZENY 토큰 주소
+        { address: '0xd4b74588311cab39925697d3f664517283f9ea19', type: 'erc20' }
+      ]
+    } as AssetFilterType
+
+    console.log(`getSpecificTokensBalance - assetFilter:`, assetFilter)
+
+    try {
+      // assetFilter를 사용하여 특정 토큰 잔액 요청
+      const tokens = await ConnectionController.walletGetAssets({
+        account: FROM_ADDRESS,
+        assetFilter: assetFilter
+      })
+
+      // bigint를 문자열로 변환하여 JSON으로 출력
+      alert(
+        `Specific tokens balance: ${JSON.stringify(
+          tokens,
+          (key, value) => (typeof value === 'bigint' ? value.toString() : value),
+          2
+        )}`
+      )
+    } catch (error) {
+      console.error('Error fetching specific tokens balance:', error)
+      alert(`Error: ${(error as Error).message}`)
+    }
+  }
+
+  // 여러 체인의 여러 토큰 잔액을 한번에 요청하는 함수
+  async function getBalanceFromWalletOnMultipleChains() {
+    if (!account?.isConnected) {
+      alert('Please connect wallet first.')
+      return
+    }
+
+    // 여러 체인의 특정 토큰 조회 설정
+    const assetFilter = {
+      // stage
+      '0x956cc': [
+        { address: 'native', type: 'native' },
+        // MYTC 토큰 주소
+        { address: '0x89b743f55fa4f300be1cd86cfb714979c16e4efe', type: 'erc20' },
+        // tZENY 토큰 주소
+        { address: '0xd4b74588311cab39925697d3f664517283f9ea19', type: 'erc20' }
+      ],
+      // BSC test
+      '0x61': [{ address: 'native', type: 'native' }]
+    } as AssetFilterType
+
+    console.log('getMultiChainTokensBalance - assetFilter:', assetFilter)
+
+    try {
+      // 여러 체인의 특정 토큰 잔액 요청
+      const multiChainTokens = await ConnectionController.walletGetAssets({
+        account: FROM_ADDRESS,
+        assetFilter: assetFilter
+      })
+
+      alert(
+        `Multi-chain tokens balance: ${JSON.stringify(
+          multiChainTokens,
+          (key, value) => (typeof value === 'bigint' ? value.toString() : value),
+          2
+        )}`
+      )
+    } catch (error) {
+      console.error('Error fetching multi-chain tokens balance:', error)
+      alert(`Error: ${(error as Error).message}`)
+    }
+  }
+
+  // 지정된 토큰 타입만 필터링하여 요청하는 함수
+  async function getBalanceFromWalletByTokenType() {
+    if (!account?.isConnected) {
+      alert('Please connect wallet first.')
+      return
+    }
+
+    const chainIdHex = `0x${network?.chainId?.toString(16)}` as `0x${string}`
+
+    try {
+      // assetTypeFilter와 chainFilter 조합으로 요청
+      // (특정 체인의 특정 타입 토큰 전체 조회)
+      const tokens = await ConnectionController.walletGetAssets({
+        account: FROM_ADDRESS,
+        chainFilter: [chainIdHex],
+        assetTypeFilter: ['NATIVE', 'ERC20'] // ERC20 토큰과 네이티브 토큰만 조회
+      })
+
+      alert(
+        `ERC20 and native tokens: ${JSON.stringify(
+          tokens,
+          (key, value) => (typeof value === 'bigint' ? value.toString() : value),
+          2
+        )}`
+      )
+    } catch (error) {
+      console.error('Error fetching tokens by type:', error)
+      alert(`Error: ${(error as Error).message}`)
+    }
+  }
+
   useEffect(() => {
-    ;(() => {
+    (() => {
       if (contractArgs || !FROM_ADDRESS || !network?.caipNetwork?.chainNamespace) return
 
       const uuidHex = uuidv4().replace(/-/g, '')
@@ -416,9 +585,9 @@ export function ActionButtonList() {
         args: [
           // arguments to pass to the specific method of contract
           FROM_ADDRESS as `0x${string}`, // address of token that will take the NFT
-          tokenId
+          tokenId // tokenId
         ],
-        method: 'mint', // method to call on the contract
+        method: 'mintTo(address, uint256)', // method to call on the contract
         abi: sampleErc721ABI, // abi of the contract
         chainNamespace: network?.caipNetwork?.chainNamespace,
         type: ConstantsUtil.TRANSACTION_TYPE.LEGACY // default type is LEGACY
@@ -447,9 +616,12 @@ export function ActionButtonList() {
     <div>
       <div className="action-button-list">
         <button onClick={handleConnect}>{account?.isConnected ? 'Connected' : 'Connect'}</button>
-        <button onClick={handleConnectWallet}>{account?.isConnected ? 'CROSSx Connected' : 'Connect CROSSx'}</button>
+        <button onClick={handleConnectWallet}>
+          {account?.isConnected ? 'CROSSx Connected' : 'Connect CROSSx'}
+        </button>
         <button onClick={handleDisconnect}>Disconnect</button>
         <button onClick={handleSwitchNetwork}>Switch to Cross</button>
+        <button onClick={handleSwitchNetworkBsc}>Switch to BSC</button>
       </div>
       <div className="action-button-list" style={{ marginTop: '10px' }}>
         <button onClick={handleSendNative}>Send 1 CROSS</button>
@@ -470,6 +642,18 @@ export function ActionButtonList() {
         <button onClick={getBalanceOfNative}>Get Balance of CROSS</button>
         <button onClick={() => getBalanceOfERC20()}>Get Balance of ERC20</button>
         <button onClick={getBalanceOfNFT}>Get Balance of NFT</button>
+        <button onClick={getBalanceFromWalletWithChainFilter}>
+          Get Balance from Wallet with ChainFilter
+        </button>
+        <button onClick={getBalanceFromWalletWithAssetFilter}>
+          Get Specific Token Balance from Wallet
+        </button>
+        <button onClick={getBalanceFromWalletOnMultipleChains}>
+          Get Multi Chain Balance from Wallet
+        </button>
+        <button onClick={getBalanceFromWalletByTokenType}>
+          Get Balance from Wallet by AssetFilterType
+        </button>
       </div>
     </div>
   )
