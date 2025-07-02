@@ -1,0 +1,14 @@
+{
+  "name": "sdk-cdn-example",
+  "version": "1.0.0",
+  "description": "Cross SDK CDN Example",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -a localhost -c-1",
+    "dev": "http-server -a localhost -c-1 --cors",
+    "serve": "python3 -m http.server"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
